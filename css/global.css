@@ -1,7 +1,10 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Oxanium&display=swap');
+
 * {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  font-family: "Oxanium", serif;
 }
 html,
 body {
@@ -18,6 +21,12 @@ a {
   text-decoration: none;
 }
 
+h3{
+  color: var(--primario);
+  font-size: 54px;
+  font-weight: 600;
+}
+
 :root{
     --body: #120428;
     --preto: #000;
@@ -25,5 +34,7 @@ a {
     --degrade: linear-gradient(to right, #e54a64, #fe9752);
     --primario: #e54a64;
     --secundario: #fe9752;
+    --cinza: #B6B1BC;
+    --roxo: #2B0B5D;
 }
 

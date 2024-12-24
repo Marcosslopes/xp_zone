@@ -1,21 +1,24 @@
 body{
-    background-color: var(--body);
-    
+    background-color: var(--body);  
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-
 }
 
 
 
 header{
+    background: url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 100vh;
+
     & .navbar {
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 40px 0;
-        background-color: var(--body);
     }
 
     & .btn{
@@ -23,7 +26,7 @@ header{
         border-radius: 5;
         border: 1px solid;
         height: 57px;
-        font-size: 20px;
+        font-size: 22px;
     }
 
     & .btn-nav{
@@ -38,28 +41,189 @@ header{
         border: var(--degrade);
     }
 
-}
+    & #banner{
+        height: 85vh;  
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    
+        & h2{
+            font-size: 56px;
+            font-weight: 800;
+            color: var(--secundario);
+            font-family: "Oxanium", serif;
+    
+            & span{
+                color: var(--cinza);
+            }
+        }
 
-
-#banner{
-    height: 85vh;
-    background: url(../images/banner.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-
-    & h2{
-        font-size: 40px;
-        font-weight: 500;
+        & p{
+            color: var(--branco);
+            font-size: 20px;
+        }
+    
+       & .filtro{
+        padding: 16px 20px;
+        border: 1px solid rgba(253, 253, 253, 0.5);
         color: var(--branco);
-        font-family: "Oxanium", serif;
+        border-radius: 4px;
+        width: 516px;
+        font-size: 24px;
+        display: flex;
+        justify-content: space-between;
+        background-color: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
 
         & span{
-            color: var(--secundario);
+            opacity: 0.6;
+        }
+       }
+    }
+
+}
+
+#sobre{
+    height: 80vh;
+    display: flex;
+    padding-top: 50px;
+    
+
+    & ul.mx-auto{
+        display: flex;
+        color: var(--branco);
+        width: 100%;
+        justify-content: space-between;
+        font-size: 28px;
+        font-weight: 100;
+        cursor: pointer;
+
+        & li{
+           opacity: 0.5;
+
+           &:hover{
+            opacity: 1;
+           }
         }
     }
 
-   
+    & .sobre-xp{
+        margin-top: 140px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+
+        & h3{
+            color: var(--primario);
+            font-size: 54px;
+            font-weight: 600;
+        }
+
+        & p{
+            color: var(--branco);
+            font-size: 24px;
+            font-weight: 100;
+        }
+
+        & ul{
+            font-size: 24px;
+            color: var(--cinza);
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+
+            & i{
+                color: var(--primario);
+            }
+        }
+
+        & button{
+            padding: 10px 20px;
+            background: var(--degrade);
+            color: var(--branco);
+            font-size: 20px;
+            font-weight: 500;
+        }
+    }    
 }
+
+#recompensa{
+    padding-top: 40px;
+    height: 80vh;
+
+
+    & p{
+        color: var(--branco);
+        font-size: 20px;
+    }
+
+    & .ganhou{
+        color: var(--primario);
+        font-size: 28px;
+        font-weight: 600;
+        background-color: var(--roxo);
+        padding: 20px 20px;
+        border-radius: 8px;
+        
+
+        & hr{
+            background-color: var(--primario);
+            width: 80%;   
+        }
+
+        & span{
+            color: var(--branco);
+        }
+    }
+
+    & .recompensa{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
+#funciona{
+    height: 40vh;
+
+    & .itens{
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    & li{
+        & .circulo{
+            background-color: var(--roxo);            
+            color: var(--primario);
+            border-radius: 100%;
+
+            & i{
+                font-size: 24px;
+                padding: 40px;
+            }
+        }
+
+        & p{
+            padding-top: 10px;
+            color: var(--branco);
+        }
+    }
+
+    & .filtro{
+        display: flex;
+        justify-content: space-between;
+        border-radius: 8px;
+        margin-top: 80px;
+        padding: 16px 20px;
+        border: 1px solid rgba(253, 253, 253, 0.5);
+        color: var(--branco);
+        background-color: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
+        font-size: 24px;
+    }
+}
+
+
+
