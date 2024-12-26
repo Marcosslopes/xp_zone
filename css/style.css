@@ -12,7 +12,7 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
-    height: 100vh;
+
 
     & .navbar {
         display: flex;
@@ -76,6 +76,10 @@ header{
             color: var(--branco);
             font-size: 24px;
         }
+
+        & #banneritiulo{
+            transition: all 0.5s ease-in-out;
+        }
     
        & .filtro{
         padding: 16px 20px;
@@ -110,7 +114,6 @@ header{
     & ul.mx-auto{
         display: flex;
         color: var(--branco);
-        width: 100%;
         justify-content: space-between;
         font-size: 28px;
         font-weight: 100;
@@ -162,13 +165,17 @@ header{
             color: var(--branco);
             font-size: 20px;
             font-weight: 500;
+
+            &:hover{
+                color: var(--roxo);
+            }
         }
     }    
 }
 
 #recompensa{
     padding-top: 40px;
-    height: 80vh;
+    height: 60vh;
 
 
     & p{
@@ -206,7 +213,7 @@ header{
     height: 40vh;
 
     & .itens{
-        margin-top: 40px;
+        margin-top: 20px;
         display: flex;
         justify-content: space-between;
     }
@@ -278,8 +285,132 @@ header{
         font-size: 20px;
         font-weight: 500;
         padding: 10px 20px;
+
+        &:hover{
+            color: var(--roxo);
+        }
     }
 
 }
+
+#cartao{
+    margin-top: 40px;
+
+    & h3{
+        font-size: 40px;
+    }
+
+    & h4{
+        font-size: 30px;
+        color: var(--cinza);
+        font-weight: 800;
+    }
+
+    & p{
+        color: var(--branco);
+        font-size: 20px;
+        font-weight: lighter;
+    }
+
+    & .presente{
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    & button{
+        background: var(--degrade);
+        color: var(--branco);
+        font-size: 20px;
+        font-weight: 500;
+        padding: 10px 20px;
+
+        &:hover{
+            color: var(--roxo);
+        }
+    }
+}
+
+footer{
+    background-color: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(5px);
+    padding: 40px 0;
+    border-top: 1px solid var(--roxo);
+
+    & h3{
+        font-size: 40px;
+    }
+
+    & .coluna-rodape{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    & .redes, .brasil{
+        display: flex;
+        gap: 20px;
+        color: var(--cinza);
+        font-size: 24px;
+
+        & i{
+            cursor: pointer;
+
+            &:hover{
+                color: var(--branco);
+            }
+        }
+    }
+
+    & h2{
+        color: var(--branco);
+        font-size: 30px;
+    }
+
+    & h4{
+        color: var(--cinza);
+        font-size: 22px;
+        cursor: pointer;
+
+        &:hover{
+            color: var(--branco);
+        }
+    }
+
+    & hr{
+        width: 100vw;
+        background-color: var(--roxo);
+    }
+
+    & .abaixo-rodape{
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+
+        & h4{
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }      
+    }
+
+    & .btn{
+        background: var(--degrade);
+        color: var(--branco);
+        font-size: 20px;
+
+        &:hover{
+            color: var(--roxo);
+        }
+    }
+}
+
+
+
+
+
+
 
 

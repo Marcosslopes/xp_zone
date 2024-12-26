@@ -68,3 +68,9 @@ ScrollReveal().reveal('.j2',{
     distance: '20%',
     delay: 400,
 });
+
+ScrollReveal().reveal('.img-cartao',{
+    origin: 'right',
+    duration: 2000,
+    distance: '30%',
+});
