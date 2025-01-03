@@ -1,0 +1,111 @@
+header{
+
+    & .nav-principal{
+        padding: 40px;
+        display: flex;
+        justify-content: space-between;
+
+        & i{
+            color: var(--branco);
+            font-size: 24px;
+        }
+
+
+        & h4{
+            font-size: 24px;
+            color: var(--branco);
+        }
+
+        & h6{
+            font-size: 18px;
+            color: var(--cinza);
+        }
+        
+        & .pesquisa{
+            margin-left: 20px;
+            display: flex;
+            padding: 10px 20px;
+            width: 500px;
+            border: 1px solid var(--branco);
+            border-radius: 4px;
+            height: 34px;
+            background-color: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            align-items: center;
+
+            & .pesquisar, .local{
+                padding: 10px;
+                align-items: center;
+                display: flex;  
+                gap: 20px;
+            }
+
+            & .pesquisar{
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+            }
+        }
+
+        & #xp-principal{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+           
+        }
+
+        & .perfil, .usuario{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            font-weight: 100;
+
+            & i:hover{
+                color: var(--primario);
+            }
+        }
+    }
+
+}
+
+#filter{
+    
+    & h4{
+        font-size: 18px;
+        border: 1px solid var(--branco);
+        padding: 10px 20px;
+        border-radius: 100px;
+        cursor: pointer;
+
+        &:hover{
+            background: var(--degrade);
+        }
+    }
+    #listaGenero{
+        display: flex;
+        color: var(--branco);
+        align-items: center;
+        justify-content: start;
+        gap: 24px;
+        overflow: hidden;
+        scroll-behavior: smooth;
+        white-space: nowrap;
+        cursor: grab;
+        scrollbar-width: none;
+        padding: 10px 20px;
+
+        &:active{
+            cursor: grabbing;
+        }
+    }
+}
+
+#banner-principal{
+    margin-top: 20px;
+    
+    & button{
+        background-color: transparent;
+        border: none;
+    }
+    
+}

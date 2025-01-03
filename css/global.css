@@ -36,5 +36,14 @@ h3{
     --secundario: #fe9752;
     --cinza: #B6B1BC;
     --roxo: #2B0B5D;
+    --roxo2: #593D85;
+    --roxo3: #0A0216;
+}
+
+body{
+  background-color: var(--body);  
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 

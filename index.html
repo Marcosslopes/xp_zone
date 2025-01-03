@@ -2,6 +2,7 @@
 <html lang="pt-BR">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>XP Zone</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -9,11 +10,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     
-     <!-- Font Awesome -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-     <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animation.css" />
   </head>
 
 
@@ -34,7 +36,7 @@
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">    
                             <a class="nav-link">
-                                <button type="button" class="btn btn-nav">Entrar</button>
+                                <button id="abrir-modal" type="button" class="btn btn-nav">Entrar</button>
                             </a>
                         </li>
                         <li class="nav-item">     
@@ -69,6 +71,7 @@
 
     <main>
         <section id="sobre">
+            <img src="images/kratos.png" alt="kratos" class="kratos">
             <div class="container">
                 <ul class="mx-auto consoles">
                     <li class="nav-item">
@@ -86,7 +89,9 @@
                 </ul>
 
                 <div class="row">
-                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        
+                    </div>
                     <div class="col-md-8 sobre-xp">
                         <h3>Conheça a XP</h3>
                         <p>
@@ -135,6 +140,9 @@
                             <h4>Você ganhou <span>100 XP</span> </h4>
                             <hr>
                         </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="images/tracer.png" alt="tracer" class="img-fluid d-none d-md-block">
                     </div>
                 </div>
             </div>
@@ -341,7 +349,45 @@
         </div>
     </footer>
 
+
+
+    <!-- modal -->
+    <div id="modal" class="modal">
+        <div class="text-center modal2">
+            <span id="fechar-modal" class="close-modal">&times;</span>
+            <div class="text-center">  
+                <img src="images/logo.svg" class="img-fluid mx-auto d-block" alt="">     
+            </div>
+            <h2>Já possui uma conta?</h2>
+            <p>Faça seu login e acesse o sistema.</p>
+            <button class="social-btn gmail">
+                <i class="fa-brands fa-google"></i> Entrar com o Gmail
+            </button>
+            <button class="social-btn facebook">
+                <i class="fa-brands fa-facebook"></i> Entrar com o Facebook</button>
+            <p class="or">Ou inscreva-se com seu e-mail</p>
+            <form>
+                <input type="email" placeholder="Digite seu email">
+                <input type="password" placeholder="Digite sua senha">
+                <div class="d-flex justify-content-between">
+                    <button type="button" class="btn cadastrar">Cadastrar</button>
+                    <a href="principal.html">
+                        <button type="button" class="btn entrar">Acessar</button>
+                    </a>
+                    
+                </div>
+            </form>
+            <p class="terms">Esqueci minha senha</p>
+        </div>
+    </div>
+
+
     <script src="javascript/script.js"></script>
     <script src="javascript/banner.js"></script>
+    <script src="javascript/scroll.js"></script>
   </body>
 </html>
+
+
+
+
