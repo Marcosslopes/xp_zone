@@ -39,33 +39,42 @@ document.addEventListener('DOMContentLoaded', criarFiltro);
 
 
 // rolagem lateral
-const rolarLateral = document.getElementById('listaGenero');
+function configurarRolagemLateral(elemento) {
+    let isDragging = false;
+    let startX;
+    let scrollLeft;
 
-let isDragging = false;
-let startX;
-let scrollLeft;
+    elemento.addEventListener('mousedown', (e) => {
+        isDragging = true;
+        elemento.classList.add('active');
+        startX = e.pageX - elemento.offsetLeft;
+        scrollLeft = elemento.scrollLeft;
+    });
 
-rolarLateral.addEventListener('mousedown', (e) => {
-    isDragging = true;
-    rolarLateral.classList.add('active');
-    startX = e.pageX - rolarLateral.offsetLeft;
-    scrollLeft = rolarLateral.scrollLeft;
-});
+    elemento.addEventListener('mouseup', () => {
+        isDragging = false;
+        elemento.classList.remove('active');
+    });
 
-rolarLateral.addEventListener('mouseup', () => {
-    isDragging = false;
-    rolarLateral.classList.remove('active');
-});
+    elemento.addEventListener('mouseleave', () => {
+        isDragging = false;
+        elemento.classList.remove('active');
+    });
 
-rolarLateral.addEventListener('mouseleave', () => {
-    isDragging = false;
-    rolarLateral.classList.remove('active');
-});
+    elemento.addEventListener('mousemove', (e) => {
+        if (!isDragging) return;
+        e.preventDefault();
+        const x = e.pageX - elemento.offsetLeft;
+        const walk = (x - startX) * 2; // Ajuste a velocidade do arrasto
+        elemento.scrollLeft = scrollLeft - walk;
+    });
+}
 
-rolarLateral.addEventListener('mousemove', (e) => {
-    if (!isDragging) return; 
-    e.preventDefault();
-    const x = e.pageX - rolarLateral.offsetLeft;
-    const walk = (x - startX) * 2; // Ajuste a velocidade do arrasto multiplicando
-    rolarLateral.scrollLeft = scrollLeft - walk;
+document.addEventListener('DOMContentLoaded', () => {
+    const listaGenero = document.getElementById('listaGenero');
+    const listaConsoles = document.getElementById('listaConsoles'); // Adicione outros IDs conforme necessário
+
+    // Configurando a rolagem para os elementos
+    configurarRolagemLateral(listaGenero);
+    configurarRolagemLateral(listaConsoles);
 });

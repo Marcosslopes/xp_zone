@@ -95,12 +95,142 @@
             <div class="container">
                 <h4>Filtre seu console</h4>
                 <template id="console-template">
-                    
+                    <div>
+                        <div class="card bg-dark text-white">
+                            <img src="" class="card-img" alt="...">
+                            <div class="card-img-overlay card-console">
+                              <h3 class="card-title nomeConsole"></h3>
+                              <p class="card-text">Os melhores jogos para <span class="nomeConsole"></span></p>
+                              <a href="">
+                                <i class="fa-solid fa-angle-right"></i>
+                                <p> <span class="qntd"></span> jogos na sua região</p>
+                              </a>
+                            </div>
+                        </div>
+                    </div>                  
+                </template>  
+                
+                <div id="listaConsoles">
+
+                </div>
+            </div>
+        </section>
+
+        <section id="destaques">
+            <div class="container">
+                <h4>Jogos em destaque </h4>
+                <template id="destaque-template">
+                    <div class="card destaque">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title nomeDestaque"></h5>
+                          <p class="card-text distancia">1km</p>
+                          <a href="#" class="btn btn-outline-secondary qualidade"></a>
+                        </div>
+                    </div>
                 </template>
+
+                <div id="listaDestaques">
+
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="ps5">
+            <div class="container videogames">
+                <h4>Consoles</h4>
+                <img src="images/xbox-x.png" alt="">
+                <img src="images/ps5.png" alt="">
             </div>
         </section>
     </main>
+
+    <footer>
+        <div class="container">
+            <div class="row"> 
+                <div>
+                    
+                </div>
+                <!-- colunas 5 -->
+                <div class="col-md-4 coluna-rodape">
+
+                    <h3>Um lugar para jogadores</h3>
+
+                    <div class="brasil">
+                        <img src="images/brasil.svg">
+                        <p>Brasil</p>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+
+                    <div>
+                        <ul class="redes">
+                            <li>
+                                <i class="fa-brands fa-facebook"></i>
+                            </li>
+                            <li>
+                                <i class="fa-brands fa-instagram"></i>
+                            </li>
+                            <li>
+                                <i class="fa-brands fa-linkedin"></i>
+                            </li>
+                            <li>
+                                <i class="fa-brands fa-youtube"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-2 coluna-rodape">
+                    <h2>Empresa</h2>
+                    <h4>Sobre</h4>
+                    <h4>Empregos</h4>
+                    <h4>Marca</h4>
+                    <h4>Sala de imprensa</h4>
+                </div>
+
+                <div class="col-md-2 coluna-rodape">
+                    <h2>Recursos</h2>
+                    <h4>Suporte</h4>
+                    <h4>Segurança</h4>
+                    <h4>Blog</h4>
+                    <h4>Comunidade</h4>
+                </div>
+
+                <div class="col-md-2 coluna-rodape">
+                    <h2>Política</h2>
+                    <h4>Termos</h4>
+                    <h4>Privacidade</h4>
+                    <h4>Cookies</h4>
+                    <h4>Moderação</h4>
+                </div>
+
+                <div class="col-md-2 coluna-rodape">
+                    <h2>Aplicativo</h2>
+                    <h4>Baixe para Android</h4>
+                    <h4>Baixe para IOS</h4>
+                </div>
+
+                <!-- linha -->
+                <hr>
+
+                <div class="abaixo-rodape mt-2">
+                    <a class="logo" href="#">
+                        <img src="images/logo.svg" alt="Logo">
+                    </a>
+                    <h4>
+                       Copyright  
+                    </h4>
+                    <button class="btn">Compre agora</button>
+
+
+                </div>
+                
+            </div>
+        </div>
+    </footer>
     
     <script src="javascript/filter.js"></script>
+    <script src="javascript/banner.js"></script>
 </body>
 </html>

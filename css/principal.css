@@ -101,11 +101,200 @@ header{
 }
 
 #banner-principal{
-    margin-top: 20px;
-    
-    & button{
-        background-color: transparent;
-        border: none;
+    margin-top: 60px;   
+}
+
+#console{
+    margin-top: 80px;
+
+    & h4{
+        font-size: 28px;
+        color: var(--cinza);
+        margin-bottom: 20px;
+    }
+
+    & .card{
+        width: 300px;
+        border-radius: 20px;
+        cursor: pointer;
+
+        & img{
+        opacity: 0.3;
+        }
+
+        &:hover{
+            & img{
+                opacity: 1;
+                transition: 1s;
+            }
+        }
+    }
+
+    & .card-console{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        padding: 20px;
+        gap: 12px;
+        font-size: 15px;
+        font-weight: 200;
+    }
+
+    & h3{
+        font-size: 26px;
+    }
+
+    & a{
+        text-decoration: none;
+        display: flex;
+        gap: 16px;
+        color: var(--branco);
+    }
+
+    & #listaConsoles{
+        display: flex;
+        gap: 24px;
+        overflow: hidden;
+        scroll-behavior: smooth;
+        white-space: nowrap;
+        cursor: grab;
+    }
+
+}
+
+#destaques{
+    margin-top: 80px;
+    padding-bottom: 40px;
+
+    & h4{
+        font-size: 24px;
+        color: var(--cinza);
+        margin-bottom: 20px;
+    }
+
+    & .card{
+        background-color: var(--roxo);
+        border-radius: 8px;
+        width: 240px;
+    }
+
+    & .card-body{      
+        gap: 8px;       
+    }
+
+    & h5{
+        font-size: 20px;
+        color: var(--branco);
+    }
+
+    & p{
+        font-size: 16px;
+        color: var(--cinza);
+    }
+
+    & a{
+        margin-top: 4px;
+        border-radius: 8px;
+        padding: 6px;
+    }
+
+    & #listaDestaques{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+#ps5{
+    & .videogames{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+
+        & img{
+            width: 100%;
+
+            &:hover{
+                transform: scale(1.05);
+                transition: 1s;
+            }
+        }
     }
     
+}
+
+footer{
+    background-color: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(5px);
+    padding: 40px 0;
+    border-top: 1px solid var(--roxo);
+    margin-top: 60px;
+
+    & h3{
+        font-size: 40px;
+    }
+
+    & .coluna-rodape{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    & .redes, .brasil{
+        display: flex;
+        gap: 20px;
+        color: var(--cinza);
+        font-size: 24px;
+
+        & i{
+            cursor: pointer;
+
+            &:hover{
+                color: var(--branco);
+            }
+        }
+    }
+
+    & h2{
+        color: var(--branco);
+        font-size: 30px;
+    }
+
+    & h4{
+        color: var(--cinza);
+        font-size: 22px;
+        cursor: pointer;
+
+        &:hover{
+            color: var(--branco);
+        }
+    }
+
+    & hr{
+        width: 100vw;
+        background-color: var(--roxo);
+    }
+
+    & .abaixo-rodape{
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+
+        & h4{
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }      
+    }
+
+    & .btn{
+        background: var(--degrade);
+        color: var(--branco);
+        font-size: 20px;
+
+        &:hover{
+            color: var(--roxo);
+        }
+    }
 }
