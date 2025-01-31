@@ -11,3 +11,4 @@ abrirModal.addEventListener('click', function(){
 fecharModal.addEventListener('click', function(){
     modal.style.display = 'none';
 })
+

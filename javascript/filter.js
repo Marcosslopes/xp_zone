@@ -78,3 +78,24 @@ document.addEventListener('DOMContentLoaded', () => {
     configurarRolagemLateral(listaGenero);
     configurarRolagemLateral(listaConsoles);
 });
+
+
+
+
+// modal
+let abrirModalConfig = document.getElementById('abrir-modalConfig');
+let modal = document.getElementById('modalOverlay');
+let modal2 = document.getElementById('modalConfig');
+
+// abrir
+abrirModalConfig.addEventListener('click', function(){
+    modal.style.display = 'flex';
+    modal2.style.display = 'block';
+})
+
+modal.addEventListener('click', function (e) {
+    if (e.target === modal) {
+        modal.style.display = 'none';
+        modal2.style.display = 'none';
+    }
+});
